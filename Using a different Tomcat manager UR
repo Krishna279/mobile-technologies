@@ -1,0 +1,23 @@
+L
+To configure the plugin for a different Tomcat instance, add a plugin configuration block to your pom.xml as follows:
+
+<project>
+  ...
+  <build>
+    ...
+    <plugins>
+      ...
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.3-SNAPSHOT</version>
+        <configuration>
+          <url>http://www.mydomain.com:1234/mymanager</url>
+        </configuration>
+      </plugin>
+      ...
+    </plugins>
+    ...
+  </build>
+  ...
+</project>
